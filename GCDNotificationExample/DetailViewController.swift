@@ -39,7 +39,6 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.configureView()
-        spinner.hidden = true
     }
 
     override func viewWillDisappear(animated: Bool) {
@@ -64,7 +63,6 @@ class DetailViewController: UIViewController {
         let startTime = NSDate()
         detailItem = ""
         calculateButton.enabled = false
-        spinner.hidden = false
         spinner.startAnimating()
 
         notificationObserver =  NSNotificationCenter.defaultCenter().addObserverForName(workCompletedNotificationKey, object: self, queue: nil) { (notification: NSNotification!) -> Void in
@@ -73,7 +71,6 @@ class DetailViewController: UIViewController {
                 self.detailItem = userInfo["result"]
             }
             // update the UI
-            self.spinner.hidden = true
             self.calculateButton.enabled = true
             self.spinner.stopAnimating()
 

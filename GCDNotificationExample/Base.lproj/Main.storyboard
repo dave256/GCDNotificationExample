@@ -90,7 +90,7 @@
                                     <action selector="calculateButtonPressed:" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="3qD-nY-O5o"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="NQb-j2-C7C">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="NQb-j2-C7C">
                                 <rect key="frame" x="290" y="345" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
